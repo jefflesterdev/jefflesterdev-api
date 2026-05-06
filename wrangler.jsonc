@@ -1,0 +1,16 @@
+{
+	"compatibility_date": "2025-10-08",
+	"main": "src/index.ts",
+	"name": "jefflesterdev-api",
+	"upload_source_maps": true,
+	"observability": {
+		"enabled": true
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "jefflesterdev-api-db",
+			"database_id": "9b147eaf-2925-4df7-ae22-3b5a1a4ad4e7"
+		}
+	]
+}
