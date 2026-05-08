@@ -14,7 +14,7 @@ Before I ever wrote professional code, I worked the Alberta oilfields and spent 
 
 My technical background spans the full stack: C#, REST APIs, Vue/Nuxt, and PostgreSQL, with CI/CD delivery through Azure DevOps. Most recently I was embedded in a large-scale national booking platform at Greyhound Australia, working on systems where reliability wasn''t optional. I also bring a strong business analysis background, which means I can bridge the gap between technical teams and stakeholders without losing meaning in either direction.
 
-I''m back in Alberta now, rooted, focused, and looking for a remote role where the work actually matters. If you want a developer who understands the full picture, from schema to screen, and who''s lived enough of real working life to know why that matters, let''s connect.',
+After 25 years I wrapped up my time in Australia at the end of March 2026, spent a month packing up a life on the other side of the world, and landed back in Alberta in late April. I''m now rooted, focused, and looking for a remote role where the work actually matters. If you want a developer who understands the full picture, from schema to screen, and who''s lived enough of real working life to know why that matters, let''s connect.',
     'jeffery.a.lester@gmail.com',
     'Edson, Alberta, Canada',
     1,
