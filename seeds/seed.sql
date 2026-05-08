@@ -3,15 +3,22 @@
 -- ============================================================
 -- PROFILE
 -- ============================================================
-INSERT INTO profile (id, name, tagline, bio, email, location, available)
+INSERT INTO profile (id, name, tagline, bio, email, location, available, photo_url)
 VALUES (
     1,
     'Jeff Lester',
     'Senior-level Full Stack Developer',
-    'Senior-level Full Stack Developer with 10+ years of experience designing, building, and owning production systems. Known for creating scalable frameworks, modernising legacy platforms, and delivering measurable improvements to performance and user experience.',
+    'I''m a Canadian developer, born in BC and raised between Edmonton and Edson, Alberta. I spent 25 years living and working in Australia before returning home to continue my career here, bringing with me a perspective shaped by two very different countries, multiple industries, and two decades of production software experience.
+
+Before I ever wrote professional code, I worked the Alberta oilfields and spent years in hospitality, running point-of-sale systems and the ordering tools that kitchen staff depend on mid-service. Those experiences gave me something most developers never get: genuine insight into what it means to be the end user of software that has to work under pressure, every time, with no room for friction. It changed how I design solutions and how I communicate with the people who have to live with them every day.
+
+My technical background spans the full stack: C#, REST APIs, Vue/Nuxt, and PostgreSQL, with CI/CD delivery through Azure DevOps. Most recently I was embedded in a large-scale national booking platform at Greyhound Australia, working on systems where reliability wasn''t optional. I also bring a strong business analysis background, which means I can bridge the gap between technical teams and stakeholders without losing meaning in either direction.
+
+I''m back in Alberta now, rooted, focused, and looking for a remote role where the work actually matters. If you want a developer who understands the full picture, from schema to screen, and who''s lived enough of real working life to know why that matters, let''s connect.',
     'jeffery.a.lester@gmail.com',
     'Edson, Alberta, Canada',
-    1
+    1,
+    'https://media.licdn.com/dms/image/v2/D5635AQHNokTe2WI23A/profile-framedphoto-shrink_200_200/B56Z03fMi6HwAY-/0/1774752418194?e=1778882400&v=beta&t=aQp0QBaOzyZdLxkZiQQEBxFV6qec7HSNGAWNiUXUV9g'
 );
 
 -- ============================================================
