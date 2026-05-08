@@ -80,7 +80,8 @@ INSERT INTO skills (skill_group_id, name, proficiency, display_order) VALUES
     (5, 'MySQL',      'proficient', 4),
     (5, 'SQLite',     'proficient', 5),
     (5, 'XML',        'proficient', 6),
-    (5, 'MongoDB',    'familiar',   7);
+    (5, 'MongoDB',    'familiar',   7),
+    (5, 'Power BI',  'familiar',   8);
 
 -- DevOps
 INSERT INTO skills (skill_group_id, name, proficiency, display_order) VALUES
@@ -170,7 +171,8 @@ INSERT INTO experience_items (experience_id, type, content, is_pinned, pin_order
 INSERT INTO experience_items (experience_id, type, content, is_pinned, pin_order, display_order) VALUES
     (2, 'responsibility', 'Defined business requirements and supported development of enterprise systems.',                                                                                                                        0, NULL, 1),
     (2, 'achievement',    'Created documentation frameworks and tooling to enable the business to quickly and efficiently identify requirements and map relationships between bespoke software packages.',                          0, NULL, 2),
-    (2, 'achievement',    'Trained staff on requirements gathering methods including MoSCoW, functional and non-functional requirements, RACI matrices, and traceability matrices.',                                               0, NULL, 3);
+    (2, 'achievement',    'Trained staff on requirements gathering methods including MoSCoW, functional and non-functional requirements, RACI matrices, and traceability matrices.',                                               0, NULL, 3),
+    (2, 'responsibility', 'Completed a Business Intelligence training course and took responsibility for creating and modifying Power BI reports and data cubes to support organisational reporting needs.',                    0, NULL, 4);
 
 -- Wideland Group (2018) — experience_id = 3
 INSERT INTO experience_items (experience_id, type, content, is_pinned, pin_order, display_order) VALUES
