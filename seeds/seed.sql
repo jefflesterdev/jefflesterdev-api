@@ -42,7 +42,7 @@ INSERT INTO skill_groups (id, name, display_order) VALUES
 INSERT INTO skills (skill_group_id, name, proficiency, display_order) VALUES
     (1, 'C#',         'expert',     1),
     (1, 'JavaScript', 'expert',     2),
-    (1, 'TypeScript', 'proficient', 3),
+    (1, 'TypeScript', 'expert',     3),
     (1, 'PHP',        'proficient', 4),
     (1, 'Python',     'familiar',   5);
 
