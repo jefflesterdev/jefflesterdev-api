@@ -1,11 +1,21 @@
 import { ApiException, fromHono } from "chanfana";
 import { Hono } from "hono";
-import { tasksRouter } from "./endpoints/tasks/router";
+import { cors } from "hono/cors";
+import { profileRouter } from "./endpoints/profile/router";
+import { achievementsRouter } from "./endpoints/achievements/router";
+import { projectsRouter } from "./endpoints/projects/router";
+import { skillsRouter } from "./endpoints/skills/router";
+import { experienceRouter } from "./endpoints/experience/router";
 import { ContentfulStatusCode } from "hono/utils/http-status";
-import { DummyEndpoint } from "./endpoints/dummyEndpoint";
 
 // Start a Hono app
 const app = new Hono<{ Bindings: Env }>();
+
+app.use("*", cors({
+	origin: "*",
+	allowMethods: ["GET", "OPTIONS"],
+	allowHeaders: ["Content-Type"],
+}));
 
 app.onError((err, c) => {
 	if (err instanceof ApiException) {
@@ -33,18 +43,18 @@ const openapi = fromHono(app, {
 	docs_url: "/",
 	schema: {
 		info: {
-			title: "My Awesome API",
-			version: "2.0.0",
-			description: "This is the documentation for my awesome API.",
+			title: "Jeff Lester — Resume API",
+			version: "1.0.0",
+			description: "Public API powering jefflester.dev.",
 		},
 	},
 });
 
-// Register Tasks Sub router
-openapi.route("/tasks", tasksRouter);
-
-// Register other endpoints
-openapi.post("/dummy/:slug", DummyEndpoint);
+openapi.route("/profile", profileRouter);
+openapi.route("/achievements", achievementsRouter);
+openapi.route("/projects", projectsRouter);
+openapi.route("/skills", skillsRouter);
+openapi.route("/experience", experienceRouter);
 
 // Export the Hono app
 export default app;
