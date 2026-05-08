@@ -69,7 +69,7 @@ INSERT INTO skills (skill_group_id, name, proficiency, display_order) VALUES
 
 -- Mobile
 INSERT INTO skills (skill_group_id, name, proficiency, display_order) VALUES
-    (4, 'React Native', 'proficient', 1),
+    (4, 'React Native', 'expert',     1),
     (4, 'Flutter',      'familiar',   2);
 
 -- Data
