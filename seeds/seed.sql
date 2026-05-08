@@ -125,6 +125,11 @@ INSERT INTO achievements (title, description, year, display_order) VALUES
         '2021', 5
     ),
     (
+        'Availability Engine Rebuild',
+        'Converted a legacy availability system built in C with SOAP-based MSSQL stored procedures into a single comprehensive MSSQL stored procedure, eliminating the SOAP layer entirely. Response times dropped from 15 to 30 seconds depending on route complexity down to under 5 seconds regardless of distance or number of services, with full availability and alternate travel options returned through a single C# REST API call.',
+        '2020-2026', 6
+    ),
+    (
         'Microsoft Dynamics 365 Migration Standards',
         'Developed standards and ran training for collecting business requirements and analysis for a bespoke migration to Microsoft Dynamics 365.',
         '2018–2020', 7
@@ -158,7 +163,8 @@ INSERT INTO experience_items (experience_id, type, content, is_pinned, pin_order
     (1, 'responsibility', 'Built APIs, backend services, and mobile solutions using React Native.',                                                                                                                               0, NULL, 5),
     (1, 'achievement',    'Identified and remediated security risks in application code, guiding other developers on secure practices.',                                                                                           0, NULL, 6),
     (1, 'achievement',    'Migrated driver app for roadside booking and loading from Flutter to React Native and implemented credit card payments through Stripe.',                                                                1, 4, 7),
-    (1, 'responsibility', 'Supported development team and management with knowledge and experience to achieve goals and targets.',                                                                                                 0, NULL, 8);
+    (1, 'responsibility', 'Supported development team and management with knowledge and experience to achieve goals and targets.',                                                                                                 0, NULL, 8),
+    (1, 'achievement',    'Rebuilt the legacy availability engine from C and SOAP-based MSSQL stored procedures into a single comprehensive MSSQL stored procedure, eliminating the SOAP layer entirely. Response times dropped from 15 to 30 seconds down to under 5 seconds regardless of route distance or number of services.',    0, NULL, 9);
 
 -- Russell Mineral Equipment (2018–2020) — experience_id = 2
 INSERT INTO experience_items (experience_id, type, content, is_pinned, pin_order, display_order) VALUES
