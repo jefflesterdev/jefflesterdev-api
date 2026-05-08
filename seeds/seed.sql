@@ -196,8 +196,10 @@ INSERT INTO experience_items (experience_id, type, content, is_pinned, pin_order
 
 -- Greyhound Australia (2012–2015) — experience_id = 6
 INSERT INTO experience_items (experience_id, type, content, is_pinned, pin_order, display_order) VALUES
-    (6, 'achievement', 'Designed and implemented the company''s first RESTful API framework, establishing standards adopted by future development.',                                                            0, NULL, 1),
-    (6, 'achievement', 'Developed the primary ticketing and booking system used by agents and third parties using jQuery, Mustache, HTML, and CSS, which remains in use today.',                               0, NULL, 2);
+    (6, 'achievement',    'Designed and implemented the company''s first RESTful API framework, establishing standards adopted by future development.',                                                                              0, NULL, 1),
+    (6, 'achievement',    'Developed the primary ticketing and booking system used by agents and third parties using jQuery, Mustache, HTML, and CSS, which remains in use today.',                                                 0, NULL, 2),
+    (6, 'responsibility', 'Provided mentoring and technical upskilling to other developers within the team.',                                                                                                                       0, NULL, 3),
+    (6, 'responsibility', 'Participated in an on-call support rotation providing Level 1 to 3 end-user support, capable of resolving issues at any level without escalation.',                                                     0, NULL, 4);
 
 -- WHK SQLD IT (2009–2011) — experience_id = 7
 INSERT INTO experience_items (experience_id, type, content, is_pinned, pin_order, display_order) VALUES
