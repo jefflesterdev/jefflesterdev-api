@@ -43,21 +43,20 @@ INSERT INTO skills (skill_group_id, name, proficiency, display_order) VALUES
     (1, 'C#',         'expert',     1),
     (1, 'JavaScript', 'expert',     2),
     (1, 'TypeScript', 'proficient', 3),
-    (1, 'ColdFusion', 'expert',     4),
-    (1, 'PHP',        'proficient', 5),
-    (1, 'Python',     'familiar',   6);
+    (1, 'PHP',        'proficient', 4),
+    (1, 'Python',     'familiar',   5);
 
 -- Frontend
 INSERT INTO skills (skill_group_id, name, proficiency, display_order) VALUES
-    (2, 'React',    'expert',     1),
-    (2, 'Vue',      'expert',     2),
-    (2, 'Angular',  'proficient', 3),
-    (2, 'Nuxt',     'proficient', 4),
-    (2, 'HTML5',    'expert',     5),
-    (2, 'CSS',      'expert',     6),
-    (2, 'SCSS',     'proficient', 7),
-    (2, 'Vuetify',  'proficient', 8),
-    (2, 'Quasar',   'proficient', 9);
+    (2, 'React',   'expert',     1),
+    (2, 'Vue',     'expert',     2),
+    (2, 'Angular', 'proficient', 3),
+    (2, 'Nuxt',    'proficient', 4),
+    (2, 'Next.js', 'proficient', 5),
+    (2, 'HTML5',   'expert',     6),
+    (2, 'CSS',     'expert',     7),
+    (2, 'SCSS',    'proficient', 8),
+    (2, 'Vuetify', 'proficient', 9);
 
 -- Backend
 INSERT INTO skills (skill_group_id, name, proficiency, display_order) VALUES
@@ -65,7 +64,8 @@ INSERT INTO skills (skill_group_id, name, proficiency, display_order) VALUES
     (3, 'Node.js',        'proficient', 2),
     (3, 'Laravel',        'proficient', 3),
     (3, 'WCF',            'proficient', 4),
-    (3, 'SOAP',           'proficient', 5);
+    (3, 'SOAP',           'proficient', 5),
+    (3, 'Stripe',         'proficient', 6);
 
 -- Mobile
 INSERT INTO skills (skill_group_id, name, proficiency, display_order) VALUES
@@ -93,8 +93,7 @@ INSERT INTO skills (skill_group_id, name, proficiency, display_order) VALUES
     (7, 'System Architecture', 'expert',     1),
     (7, 'API Design',          'expert',     2),
     (7, 'Agile',               'proficient', 3),
-    (7, 'Accessibility',       'proficient', 4),
-    (7, 'Waterfall',           'proficient', 5);
+    (7, 'Accessibility',       'proficient', 4);
 
 -- ============================================================
 -- ACHIEVEMENTS (career-level, not tied to a specific role)
