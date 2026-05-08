@@ -182,8 +182,10 @@ INSERT INTO experience_items (experience_id, type, content, is_pinned, pin_order
 
 -- Weis Frozen Foods (2016–2017) — experience_id = 4
 INSERT INTO experience_items (experience_id, type, content, is_pinned, pin_order, display_order) VALUES
-    (4, 'responsibility', 'Managed IT systems and modernisation efforts.',                                                                                                                                                        0, NULL, 1),
-    (4, 'achievement',    'Converted the primary stock and sales application from MS Access to a modern WCF Windows application, including predictive calculations, historical data analysis, and competitor information.',        1, 5, 2);
+    (4, 'achievement',    'Converted the primary stock and sales application from MS Access to a modern WCF Windows application, including predictive calculations, historical data analysis, and competitor information.',        1, 5, 2),
+    (4, 'responsibility', 'Managed all IT infrastructure for the facility including networking, PCs, internet connectivity, and telecommunications, covering procurement, maintenance, and ongoing updates.',                     0, NULL, 3),
+    (4, 'responsibility', 'Maintained software services and updates for food production machinery, ensuring operational continuity in a time-sensitive manufacturing environment.',                                               0, NULL, 4),
+    (4, 'responsibility', 'Responsible for Cap-ex and Op-ex reporting for all IT and telecommunications expenditure across the business.',                                                                                       0, NULL, 5);
 
 -- Strategenics (2015–2016) — experience_id = 5
 INSERT INTO experience_items (experience_id, type, content, is_pinned, pin_order, display_order) VALUES
