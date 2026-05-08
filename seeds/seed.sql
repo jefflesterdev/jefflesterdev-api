@@ -101,7 +101,7 @@ INSERT INTO skills (skill_group_id, name, proficiency, display_order) VALUES
 INSERT INTO achievements (title, description, year, display_order) VALUES
     (
         'High-Traffic Booking Website Ownership',
-        'Owned and drove development of a high-traffic public booking website responsible for most of the company revenue.',
+        'Solely owned and drove development of the public booking website processing $40,000 to $100,000 AUD in daily revenue depending on season, and the primary driver of company income.',
         '2020–2026', 1
     ),
     (
@@ -121,13 +121,8 @@ INSERT INTO achievements (title, description, year, display_order) VALUES
     ),
     (
         'Flutter to React Native Migration',
-        'Independently converted a mobile application from Flutter to React Native.',
+        'Identified that Flutter''s lack of a Stripe SDK was blocking payment capability for the driver app. Made the business case and independently converted the entire application to React Native, then implemented Stripe credit card payments end-to-end, unblocking a critical revenue feature.',
         '2021', 5
-    ),
-    (
-        'Scalable System Delivery',
-        'Delivered scalable systems handling pricing, integrations, and real-world operational complexity.',
-        '2020–2026', 6
     ),
     (
         'Microsoft Dynamics 365 Migration Standards',
