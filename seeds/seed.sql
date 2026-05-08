@@ -176,7 +176,9 @@ INSERT INTO experience_items (experience_id, type, content, is_pinned, pin_order
 
 -- Wideland Group (2018) — experience_id = 3
 INSERT INTO experience_items (experience_id, type, content, is_pinned, pin_order, display_order) VALUES
-    (3, 'achievement', 'Managed infrastructure and led infrastructure migration for ~150 users nationally.', 0, NULL, 1);
+    (3, 'achievement',    'Managed infrastructure and led infrastructure migration for ~150 users nationally.',                                                                                                                                                                          0, NULL, 1),
+    (3, 'responsibility', 'Managed telecommunications and IT infrastructure across all east coast Australia offices for Wideland Group and AVIS, covering network, connectivity, and systems administration.',                                                                           0, NULL, 2),
+    (3, 'achievement',    'Led a full network modernisation across all east coast offices, upgrading to fibre internet and replacing legacy phone systems with VoIP, while keeping total costs flat for the year including implementation by personally managing rollout where possible.', 0, NULL, 3);
 
 -- Weis Frozen Foods (2016–2017) — experience_id = 4
 INSERT INTO experience_items (experience_id, type, content, is_pinned, pin_order, display_order) VALUES
