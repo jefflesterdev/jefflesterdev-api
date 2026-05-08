@@ -25,68 +25,76 @@ I''m back in Alberta now, rooted, focused, and looking for a remote role where t
 -- SKILL GROUPS
 -- ============================================================
 INSERT INTO skill_groups (id, name, display_order) VALUES
-    (1, 'Frontend',  1),
-    (2, 'Mobile',    2),
+    (1, 'Languages', 1),
+    (2, 'Frontend',  2),
     (3, 'Backend',   3),
-    (4, 'Data',      4),
-    (5, 'Tools',     5),
-    (6, 'Practices', 6);
+    (4, 'Mobile',    4),
+    (5, 'Data',      5),
+    (6, 'DevOps',    6),
+    (7, 'Practices', 7);
 
 -- ============================================================
 -- SKILLS
 -- Proficiency: familiar | proficient | expert
 -- ============================================================
 
+-- Languages
+INSERT INTO skills (skill_group_id, name, proficiency, display_order) VALUES
+    (1, 'C#',         'expert',     1),
+    (1, 'JavaScript', 'expert',     2),
+    (1, 'TypeScript', 'proficient', 3),
+    (1, 'ColdFusion', 'expert',     4),
+    (1, 'PHP',        'proficient', 5),
+    (1, 'Python',     'familiar',   6);
+
 -- Frontend
 INSERT INTO skills (skill_group_id, name, proficiency, display_order) VALUES
-    (1, 'React',      'proficient', 1),
-    (1, 'Vue',        'expert',     2),
-    (1, 'Nuxt',       'expert',     3),
-    (1, 'Angular',    'proficient', 4),
-    (1, 'Vuetify',    'proficient', 5),
-    (1, 'Quasar',     'familiar',   6),
-    (1, 'HTML5',      'expert',     7),
-    (1, 'CSS',        'expert',     8),
-    (1, 'SCSS',       'proficient', 9),
-    (1, 'SASS',       'proficient', 10),
-    (1, 'JavaScript', 'expert',     11);
-
--- Mobile
-INSERT INTO skills (skill_group_id, name, proficiency, display_order) VALUES
-    (2, 'React Native', 'proficient', 1),
-    (2, 'Flutter',      'familiar',   2);
+    (2, 'React',    'expert',     1),
+    (2, 'Vue',      'expert',     2),
+    (2, 'Angular',  'proficient', 3),
+    (2, 'Nuxt',     'proficient', 4),
+    (2, 'HTML5',    'expert',     5),
+    (2, 'CSS',      'expert',     6),
+    (2, 'SCSS',     'proficient', 7),
+    (2, 'Vuetify',  'proficient', 8),
+    (2, 'Quasar',   'proficient', 9);
 
 -- Backend
 INSERT INTO skills (skill_group_id, name, proficiency, display_order) VALUES
-    (3, 'Node.js',            'proficient', 1),
-    (3, 'TypeScript',         'proficient', 2),
-    (3, '.NET (C#, ASP.NET)', 'proficient', 3),
-    (3, 'PHP',                'familiar',   4),
-    (3, 'Python',             'familiar',   5);
+    (3, '.NET / ASP.NET', 'expert',     1),
+    (3, 'Node.js',        'proficient', 2),
+    (3, 'Laravel',        'proficient', 3),
+    (3, 'WCF',            'proficient', 4),
+    (3, 'SOAP',           'proficient', 5);
+
+-- Mobile
+INSERT INTO skills (skill_group_id, name, proficiency, display_order) VALUES
+    (4, 'React Native', 'proficient', 1),
+    (4, 'Flutter',      'familiar',   2);
 
 -- Data
 INSERT INTO skills (skill_group_id, name, proficiency, display_order) VALUES
-    (4, 'PostgreSQL', 'proficient', 1),
-    (4, 'MSSQL',      'proficient', 2),
-    (4, 'MySQL',      'proficient', 3),
-    (4, 'MongoDB',    'familiar',   4),
-    (4, 'SQLite',     'proficient', 5);
+    (5, 'MSSQL',      'expert',     1),
+    (5, 'JSON',       'expert',     2),
+    (5, 'PostgreSQL', 'proficient', 3),
+    (5, 'MySQL',      'proficient', 4),
+    (5, 'SQLite',     'proficient', 5),
+    (5, 'XML',        'proficient', 6),
+    (5, 'MongoDB',    'familiar',   7);
 
--- Tools
+-- DevOps
 INSERT INTO skills (skill_group_id, name, proficiency, display_order) VALUES
-    (5, 'Azure DevOps',  'proficient', 1),
-    (5, 'Git',           'expert',     2),
-    (5, 'CI/CD',         'proficient', 3),
-    (5, 'VSCode',        'expert',     4),
-    (5, 'Visual Studio', 'proficient', 5);
+    (6, 'Git',          'expert',     1),
+    (6, 'Azure DevOps', 'proficient', 2),
+    (6, 'CI/CD',        'proficient', 3);
 
 -- Practices
 INSERT INTO skills (skill_group_id, name, proficiency, display_order) VALUES
-    (6, 'System Architecture', 'expert',     1),
-    (6, 'API Design',          'expert',     2),
-    (6, 'Accessibility',       'proficient', 3),
-    (6, 'Agile',               'proficient', 4),
-    (6, 'Waterfall',           'proficient', 5);
+    (7, 'System Architecture', 'expert',     1),
+    (7, 'API Design',          'expert',     2),
+    (7, 'Agile',               'proficient', 3),
+    (7, 'Accessibility',       'proficient', 4),
+    (7, 'Waterfall',           'proficient', 5);
 
 -- ============================================================
 -- ACHIEVEMENTS (career-level, not tied to a specific role)
