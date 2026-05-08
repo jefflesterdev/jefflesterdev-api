@@ -65,7 +65,8 @@ INSERT INTO skills (skill_group_id, name, proficiency, display_order) VALUES
     (3, 'Laravel',        'proficient', 3),
     (3, 'WCF',            'proficient', 4),
     (3, 'SOAP',           'proficient', 5),
-    (3, 'Stripe',         'proficient', 6);
+    (3, 'Stripe',         'proficient', 6),
+    (3, 'Ruby on Rails',  'proficient', 7);
 
 -- Mobile
 INSERT INTO skills (skill_group_id, name, proficiency, display_order) VALUES
@@ -189,7 +190,9 @@ INSERT INTO experience_items (experience_id, type, content, is_pinned, pin_order
 
 -- Strategenics (2015–2016) — experience_id = 5
 INSERT INTO experience_items (experience_id, type, content, is_pinned, pin_order, display_order) VALUES
-    (5, 'responsibility', 'Delivered software solutions and provided development guidance.', 0, NULL, 1);
+    (5, 'achievement',    'Built an automated Markdown documentation generator in Ruby on Rails for internal RoR projects, improving developer documentation consistency and reducing manual effort.', 0, NULL, 2),
+    (5, 'responsibility', 'Supported other developers across Ruby on Rails projects, providing hands-on development assistance and training as required.',                                            0, NULL, 3),
+    (5, 'responsibility', 'Attended client meetings to provide technical clarity and support for both the client and the business.',                                                                  0, NULL, 4);
 
 -- Greyhound Australia (2012–2015) — experience_id = 6
 INSERT INTO experience_items (experience_id, type, content, is_pinned, pin_order, display_order) VALUES
