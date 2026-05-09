@@ -20,7 +20,7 @@ After 25 years I wrapped up my time in Australia at the end of March 2026, spent
     'https://github.com/jefflesterdev',
     'Edson, Alberta, Canada',
     1,
-    'https://media.licdn.com/dms/image/v2/D5635AQHNokTe2WI23A/profile-framedphoto-shrink_200_200/B56Z03fMi6HwAY-/0/1774752418194?e=1778882400&v=beta&t=aQp0QBaOzyZdLxkZiQQEBxFV6qec7HSNGAWNiUXUV9g'
+    'https://jefflesterdev-vanilla.jeffery-a-lester.workers.dev/profile.png'
 );
 
 -- ============================================================
