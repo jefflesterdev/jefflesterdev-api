@@ -4,13 +4,7 @@ export const achievement = z.object({
 	id: z.number().int(),
 	title: z.string(),
 	description: z.string().nullable(),
-	year: z.string().nullable(),
-	display_order: z.number().int(),
-	created_at: z.string(),
+	company: z.string(),
+	start_date: z.string(),
+	end_date: z.string().nullable(),
 });
-
-export const AchievementModel = {
-	tableName: "achievements",
-	primaryKeys: ["id"],
-	schema: achievement,
-};
