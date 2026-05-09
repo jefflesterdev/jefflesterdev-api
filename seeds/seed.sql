@@ -3,7 +3,7 @@
 -- ============================================================
 -- PROFILE
 -- ============================================================
-INSERT INTO profile (id, name, tagline, bio, email, location, available, photo_url)
+INSERT INTO profile (id, name, tagline, bio, email, linkedin_url, github_url, location, available, photo_url)
 VALUES (
     1,
     'Jeff Lester',
@@ -16,6 +16,8 @@ My technical background spans the full stack: C#, REST APIs, Vue/Nuxt, and Postg
 
 After 25 years I wrapped up my time in Australia at the end of March 2026, spent a month packing up a life on the other side of the world, and landed back in Alberta in late April. I''m now rooted, focused, and looking for a remote role where the work actually matters. If you want a developer who understands the full picture, from schema to screen, and who''s lived enough of real working life to know why that matters, let''s connect.',
     'jeffery.a.lester@gmail.com',
+    'https://www.linkedin.com/in/jeff-lester-13a4007',
+    'https://github.com/jefflesterdev',
     'Edson, Alberta, Canada',
     1,
     'https://media.licdn.com/dms/image/v2/D5635AQHNokTe2WI23A/profile-framedphoto-shrink_200_200/B56Z03fMi6HwAY-/0/1774752418194?e=1778882400&v=beta&t=aQp0QBaOzyZdLxkZiQQEBxFV6qec7HSNGAWNiUXUV9g'
