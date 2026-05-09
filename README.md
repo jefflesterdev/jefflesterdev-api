@@ -1,72 +1,74 @@
-# OpenAPI Template
+# jefflesterdev-api
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/templates/tree/main/chanfana-openapi-template)
+This is the backend for my personal portfolio site at jefflester.dev. It's a REST API running on Cloudflare Workers, backed by a D1 SQLite database, and it serves everything the front end needs: profile info, work history, skills, and achievements.
 
-![OpenAPI Template Preview](https://imagedelivery.net/wSMYJvS3Xw-n339CbDyDIA/91076b39-1f5b-46f6-7f14-536a6f183000/public)
+The API is built with [Hono](https://hono.dev) for routing and [Chanfana](https://chanfana.com) for OpenAPI schema generation. Chanfana wires up the OpenAPI docs automatically from the endpoint definitions, so there's no separate spec file to maintain. You can browse the live docs at the `/` route once the worker is deployed.
 
-<!-- dash-content-start -->
+## Stack
 
-This is a Cloudflare Worker with OpenAPI 3.1 Auto Generation and Validation using [chanfana](https://github.com/cloudflare/chanfana) and [Hono](https://github.com/honojs/hono).
+- **Runtime:** Cloudflare Workers
+- **Router:** Hono
+- **OpenAPI:** Chanfana
+- **Database:** Cloudflare D1 (SQLite)
+- **Testing:** Vitest with `@cloudflare/vitest-pool-workers`
+- **Package manager:** pnpm
 
-This is an example project made to be used as a quick start into building OpenAPI compliant Workers that generates the
-`openapi.json` schema automatically from code and validates the incoming request to the defined parameters or request body.
+## Getting started
 
-This template includes various endpoints, a D1 database, and integration tests using [Vitest](https://vitest.dev/) as examples. In endpoints, you will find [chanfana D1 AutoEndpoints](https://chanfana.com/endpoints/auto/d1) and a [normal endpoint](https://chanfana.com/endpoints/defining-endpoints) to serve as examples for your projects.
-
-Besides being able to see the OpenAPI schema (openapi.json) in the browser, you can also extract the schema locally no hassle by running this command `npm run schema`.
-
-<!-- dash-content-end -->
-
-> [!IMPORTANT]
-> When using C3 to create this project, select "no" when it asks if you want to deploy. You need to follow this project's [setup steps](https://github.com/cloudflare/templates/tree/main/openapi-template#setup-steps) before deploying.
-
-## Getting Started
-
-Outside of this repo, you can start a new project with this template using [C3](https://developers.cloudflare.com/pages/get-started/c3/) (the `create-cloudflare` CLI):
+Install dependencies:
 
 ```bash
-npm create cloudflare@latest -- --template=cloudflare/templates/openapi-template
+pnpm install
 ```
 
-A live public deployment of this template is available at [https://openapi-template.templates.workers.dev](https://openapi-template.templates.workers.dev)
+Start the local dev server (this also applies any pending migrations to the local D1 database):
 
-## Setup Steps
+```bash
+pnpm dev
+```
 
-1. Install the project dependencies with a package manager of your choice:
-   ```bash
-   npm install
-   ```
-2. Create a [D1 database](https://developers.cloudflare.com/d1/get-started/) with the name "openapi-template-db":
-   ```bash
-   npx wrangler d1 create openapi-template-db
-   ```
-   ...and update the `database_id` field in `wrangler.json` with the new database ID.
-3. Run the following db migration to initialize the database (notice the `migrations` directory in this project):
-   ```bash
-   npx wrangler d1 migrations apply DB --remote
-   ```
-4. Deploy the project!
-   ```bash
-   npx wrangler deploy
-   ```
-5. Monitor your worker
-   ```bash
-   npx wrangler tail
-   ```
+Seed the local database with profile data:
+
+```bash
+pnpm seed
+```
+
+## Database
+
+Migrations live in the `migrations/` directory and are applied automatically when you run `pnpm dev` locally. For the remote database, run:
+
+```bash
+pnpm run seedLocalDb  # local only
+pnpm run seed:remote  # production D1
+```
+
+If you make schema changes, add a new numbered migration file in `migrations/` and Wrangler will pick it up.
+
+## API endpoints
+
+| Method | Path | Description |
+|--------|------|-------------|
+| GET | `/profile` | Name, tagline, bio, contact info |
+| GET | `/experience` | Work history with bullet points |
+| GET | `/skills` | Skill groups and proficiency levels |
+| GET | `/achievements` | Key career achievements |
+
+Full interactive docs are available at the root URL when the worker is running.
 
 ## Testing
 
-This template includes integration tests using [Vitest](https://vitest.dev/). To run the tests locally:
-
 ```bash
-npm run test
+pnpm test
 ```
 
-Test files are located in the `tests/` directory, with examples demonstrating how to test your endpoints and database interactions.
+Tests run against a real local Workers environment via Vitest, not mocks.
 
-## Project structure
+## Deployment
 
-1. Your main router is defined in `src/index.ts`.
-2. Each endpoint has its own file in `src/endpoints/`.
-3. Integration tests are located in the `tests/` directory.
-4. For more information read the [chanfana documentation](https://chanfana.com/), [Hono documentation](https://hono.dev/docs), and [Vitest documentation](https://vitest.dev/guide/).
+Migrations are applied automatically before each deploy via the `predeploy` script:
+
+```bash
+pnpm deploy
+```
+
+The worker is configured in `wrangler.jsonc`. The D1 binding name is `DB`.
