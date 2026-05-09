@@ -33,6 +33,7 @@ export class AchievementList extends OpenAPIRoute {
 			JOIN experience e ON e.id = ei.experience_id
 			WHERE ei.type = 'achievement'
 			  AND ei.title IS NOT NULL
+			  AND ei.pinned = 1
 			ORDER BY COALESCE(e.end_date, '9999-99') DESC, ei.display_order ASC
 		`).all();
 
