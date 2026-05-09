@@ -178,8 +178,8 @@ INSERT INTO experience_items (experience_id, type, title, content, pinned, is_pi
 -- Perkins Shipping (2004–2008) — experience_id = 8
 INSERT INTO experience_items (experience_id, type, title, content, pinned, is_pinned, pin_order, display_order) VALUES
     (8, 'responsibility', NULL,                              'Developed internal systems and managed global communications infrastructure.',                                                                               0, 0, NULL, 1),
-    (8, 'achievement',    'Company Intranet Development',    'Built the company''s first intranet using ColdFusion.',                                                                                                     1, 0, NULL, 2),
-    (8, 'achievement',    'Website Development In-housing',  'Brought development and ongoing management of the business website in-house.',                                                                              1, 0, NULL, 3),
+    (8, 'achievement',    'Company Intranet Development',    'Built the company''s first intranet using ColdFusion.',                                                                                                     0, 0, NULL, 2),
+    (8, 'achievement',    'Website Development In-housing',  'Brought development and ongoing management of the business website in-house.',                                                                              0, 0, NULL, 3),
     (8, 'achievement',    'HSE Incident Reporting System',   'Created an end-to-end incident reporting system for the HSE department, covering incident tracking and root cause analysis.',                               1, 0, NULL, 4);
 
 -- Rooney Shipping (2001–2004) — experience_id = 9
