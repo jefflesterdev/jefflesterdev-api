@@ -8,13 +8,19 @@ VALUES (
     1,
     'Jeff Lester',
     'Senior-level Full Stack Developer',
-    'I''m a Canadian developer, born in BC and raised between Edmonton and Edson, Alberta. I spent 25 years living and working in Australia before returning home to continue my career here, bringing with me a perspective shaped by two very different countries, multiple industries, and two decades of production software experience.
+    'I''m a Canadian developer based in Edson, Alberta, recently returned home after 25 years working across Australia.
 
-Before I ever wrote professional code, I worked the Alberta oilfields and spent years in hospitality, running point-of-sale systems and the ordering tools that kitchen staff depend on mid-service. Those experiences gave me something most developers never get: genuine insight into what it means to be the end user of software that has to work under pressure, every time, with no room for friction. It changed how I design solutions and how I communicate with the people who have to live with them every day.
+I build systems that work in the real world, and keep working as things change.
 
-My technical background spans the full stack: C#, REST APIs, Vue/Nuxt, and PostgreSQL, with CI/CD delivery through Azure DevOps. Most recently I was embedded in a large-scale national booking platform at Greyhound Australia, working on systems where reliability wasn''t optional. I also bring a strong business analysis background, which means I can bridge the gap between technical teams and stakeholders without losing meaning in either direction.
+For over 20 years I''ve worked across transportation, logistics, manufacturing, and enterprise systems, most recently as the developer responsible for large parts of Greyhound Australia''s national booking platform: ticketing, pricing, payments, live tracking, and the API layer underpinning it all.
 
-After 25 years I wrapped up my time in Australia at the end of March 2026, spent a month packing up a life on the other side of the world, and landed back in Alberta in late April. I''m now rooted, focused, and looking for a remote role where the work actually matters. If you want a developer who understands the full picture, from schema to screen, and who''s lived enough of real working life to know why that matters, let''s connect.',
+I naturally think in systems. I look at how components interact, where assumptions are hiding, and where small changes create larger downstream problems. That mindset shapes how I approach both new builds and legacy modernisation, where the real challenge isn''t just writing good code, it''s making significant changes to systems that businesses are depending on every day.
+
+Technically I work across the full stack: C# and .NET on the backend, React, Vue, and Nuxt on the frontend, React Native for mobile, PostgreSQL and MSSQL for data, and Azure DevOps for CI/CD. I''m comfortable picking up new technologies quickly because I focus on understanding the underlying patterns rather than the specific syntax.
+
+I also bring genuine business analysis experience, having led requirements gathering and documentation frameworks for enterprise system migrations. That background means I can talk to stakeholders as clearly as I can talk to engineers.
+
+Currently open to remote Senior Full Stack, Platform Engineering, or Systems Architecture roles across Canada.',
     'jeffery.a.lester@gmail.com',
     'https://www.linkedin.com/in/jeff-lester-13a4007',
     'https://github.com/jefflesterdev',
